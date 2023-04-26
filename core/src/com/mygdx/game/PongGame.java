@@ -77,6 +77,7 @@ public class PongGame extends ApplicationAdapter {
 
 		shape.begin(ShapeRenderer.ShapeType.Filled);
 		drawRectangles();
+		drawNet();
 		shape.end();
 
 		displayFPS();
@@ -205,6 +206,10 @@ public class PongGame extends ApplicationAdapter {
 		p2.render(shape);
 		//ball
 		ball.render(shape);
+	}
+
+	public void drawNet(){
+		shape.line(VW/2,0,VW/2,VH);
 	}
 
 	public void drawDebug(){
