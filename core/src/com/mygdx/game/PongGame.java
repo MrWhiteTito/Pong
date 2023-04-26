@@ -77,7 +77,6 @@ public class PongGame extends ApplicationAdapter {
 
 		shape.begin(ShapeRenderer.ShapeType.Filled);
 		drawRectangles();
-		drawDebug();
 		shape.end();
 
 		displayFPS();
